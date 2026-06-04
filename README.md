@@ -1,50 +1,57 @@
-# Welcome to your Expo app 👋
+# TechPathGA
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A mobile career platform built for Georgia students and job seekers exploring tech careers. Covers employers, universities, certifications, and Georgia-specific programs — with an AI advisor backed by live web search.
 
-## Get started
+## Screens
 
-1. Install dependencies
+### Home
+- Hero section with Georgia tech market stats (6+ employers, $65K+ avg entry pay, 10+ certifications, free state programs)
+- Feature cards linking to each section
+- Georgia Spotlight: Quick Start, HOPE Career Grant, Augusta Cyber Center, Atlanta Tech Square
+- AI Advisor CTA
 
+### Tech Careers
+- Job listings from Delta, Google, Equifax, Home Depot, NCR Voyix, and Fiserv
+- Company filter bar — tap a chip to filter and auto-scroll to that company's listings
+- Expandable job cards showing salary range, location, level badge (Entry/Mid/Senior), skill tags, full description, and requirements
+
+### Education Paths
+- Georgia universities with CS programs: Georgia Tech, UGA, KSU, GSU, Augusta University
+- Degree options, transfer paths, and program details
+
+### Certifications
+- Certifications and bootcamps ranked by Georgia employer demand
+- Includes AWS, CompTIA Security+, Cisco CCNA, and others
+
+### AI Advisor
+- Conversational AI powered by OpenAI with live web search
+- Georgia-specific system prompt — advice tailored to the Atlanta/Georgia job market
+- Experience tier selector (Beginner, Career Changer, Experienced Pro)
+- Example query chips for common questions
+
+## Tech Stack
+
+| Layer | Tools |
+|---|---|
+| Framework | React Native, Expo (SDK 54) |
+| Language | TypeScript |
+| Navigation | Expo Router (file-based tabs) |
+| AI | OpenAI API with live web search (Responses API) |
+| Styling | Custom theme, StyleSheet |
+
+## Setup
+
+1. Install dependencies:
    ```bash
    npm install
    ```
 
-2. Start the app
+2. Create a `.env` file:
+   ```
+   OPENAI_API_KEY=your_openai_api_key_here
+   ```
 
+3. Start the app:
    ```bash
    npx expo start
    ```
-
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
